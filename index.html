@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ear Care and Hearing of St. Louis | A fresh take on hearing healthcare</title>
+    <meta
+      name="description"
+      content="Ear Care and Hearing of St. Louis offers hearing testing, hearing instruments, auditory processing testing and treatment, balance testing, and the revolutionary pRAD Auditory Therapy program."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-name">Ear Care and Hearing of St. Louis</span>
+          <span class="brand-sub">A fresh take on hearing healthcare</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#prad">pRAD Therapy</a>
+          <a href="#experience">Experience</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Find Us</a>
+        </nav>
+        <a class="btn btn-primary" href="#contact">Book appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Midwest's only provider of pRAD Auditory Therapy</p>
+            <h1>Hear better from the ear to the brain.</h1>
+            <p class="hero-copy">
+              This is not the “same old hearing aid practice”. We focus on you as a person and do the
+              hard work that helps you hear your best.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Book appointment</a>
+              <a class="btn btn-secondary" href="#services">See services</a>
+            </div>
+            <div class="hero-highlights">
+              <div>
+                <span class="highlight-title">pRAD Auditory Therapy</span>
+                <span class="highlight-note">For patients with and without hearing impairment.</span>
+              </div>
+              <div>
+                <span class="highlight-title">Custom-fit hearing devices</span>
+                <span class="highlight-note">If needed, paired with brain-based therapy.</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>See you soon!</h2>
+            <p class="hero-card-copy">
+              Schedule your visit to Ear Care and Hearing of St. Louis and experience a new standard of
+              hearing healthcare.
+            </p>
+            <div class="hero-card-details">
+              <div>
+                <h3>Hours</h3>
+                <p>Mon to Friday: 9 AM – 3 PM</p>
+                <p>Sat to Sun: Closed / Apt Only</p>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>11630 Studt Ave #210</p>
+                <p>St. Louis, MO 63141</p>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-full" href="#contact">Book appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="prad">
+        <div class="container split">
+          <div>
+            <h2>Revolutionary pRAD Auditory Therapy</h2>
+            <p>
+              We are excited to be the Midwest's only provider of pRAD Auditory Therapy. This program
+              is designed to change how your brain processes speech and language for the better.
+            </p>
+            <p>
+              pRAD can be paired with a well-fit hearing device (if you have hearing impairment) or
+              used as a stand-alone program if your hearing is normal.
+            </p>
+            <a class="btn btn-secondary" href="#contact">Ask about pRAD</a>
+          </div>
+          <div class="callout">
+            <h3>Auditory therapy that goes beyond the device</h3>
+            <p>
+              Every clinic can sell the same hearing aids. We focus on individualized care that helps
+              you hear better from the ear to the brain.
+            </p>
+            <ul>
+              <li>Auditory processing support</li>
+              <li>Speech and language improvements</li>
+              <li>Personalized treatment plan</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE HEARING EXPERIENCE -->
+      <section class="section hearing-experience" id="experience">
+        <div class="container">
+          <div class="experience-header">
+            <span class="eyebrow">Interactive Demo</span>
+            <h2>Experience the Difference</h2>
+            <p>Drag the slider to simulate how hearing clarity improves with proper treatment and pRAD therapy.</p>
+          </div>
+          
+          <div class="experience-demo">
+            <div class="waveform-container">
+              <canvas id="waveform" width="800" height="200"></canvas>
+              <div class="wave-overlay" id="waveOverlay"></div>
+            </div>
+            
+            <div class="clarity-slider-wrap">
+              <div class="slider-labels">
+                <span class="label-left">Untreated Hearing</span>
+                <span class="label-right">With pRAD Therapy</span>
+              </div>
+              <input type="range" id="claritySlider" class="clarity-slider" min="0" max="100" value="20" />
+              <div class="clarity-value">
+                <span id="clarityPercent">20</span>% Clarity
+              </div>
+            </div>
+            
+            <div class="experience-cards">
+              <div class="exp-card" id="expCardBefore">
+                <div class="exp-icon">🔇</div>
+                <h4>Without Treatment</h4>
+                <p>Muffled speech, difficulty in conversations, social withdrawal, cognitive strain.</p>
+              </div>
+              <div class="exp-card exp-card-highlight" id="expCardAfter">
+                <div class="exp-icon">🔊</div>
+                <h4>With pRAD + Devices</h4>
+                <p>Crystal clear speech, effortless conversations, renewed confidence, sharper cognition.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="experience-cta">
+            <p>Ready to experience this transformation yourself?</p>
+            <a class="btn btn-primary btn-glow" href="#contact">Start Your Journey</a>
+          </div>
+        </div>
+        
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+      </section>
+
+      <section class="section alt" id="services">
+        <div class="container">
+          <h2>Our services</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Auditory Processing Testing &amp; Treatment</h3>
+              <p>Comprehensive evaluation with targeted therapy options.</p>
+            </article>
+            <article class="card">
+              <h3>Hearing Testing &amp; Hearing Instruments</h3>
+              <p>Professional testing, plus hearing instruments fit to your needs.</p>
+            </article>
+            <article class="card">
+              <h3>Balance Testing &amp; Fall Risk Assessment</h3>
+              <p>Assess balance and help reduce fall risk with expert testing.</p>
+            </article>
+          </div>
+          <div class="cta-inline">
+            <p>Ready to take the next step toward better hearing?</p>
+            <a class="btn btn-primary" href="#contact">Book appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS SECTION -->
+      <section class="section reviews-section" id="reviews">
+        <div class="container">
+          <div class="reviews-header">
+            <span class="eyebrow">Patient Testimonials</span>
+            <h2>What Our Patients Say</h2>
+            <p>Real experiences from real people who've transformed their hearing health with us.</p>
+          </div>
+          
+          <div class="reviews-grid" id="reviewsGrid">
+            <!-- Reviews will be added here -->
+          </div>
+          
+          <div class="reviews-cta">
+            <p>Ready to write your own success story?</p>
+            <a class="btn btn-primary" href="#contact">Book Your Appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="team">
+        <div class="container split">
+          <div>
+            <h2>Meet the team</h2>
+            <p class="team-name">Richard M Hogan, MS</p>
+            <p class="team-role">Audiologist</p>
+            <p>
+              Specialties include hearing aids and auditory processing care. Expect a personal, invested
+              approach to your hearing health.
+            </p>
+          </div>
+          <div class="badge">
+            <p>Audiologist</p>
+            <h3>Richard Hogan</h3>
+            <span>Hearing aids &amp; auditory processing</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Find us</h2>
+            <p>11630 Studt Ave #210</p>
+            <p>St. Louis, MO 63141</p>
+            <p><a href="tel:3145320682">(314) 532-0682</a></p>
+            <p><a href="mailto:richard.earcare@gmail.com">richard.earcare@gmail.com</a></p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="tel:3145320682">Call now</a>
+              <a class="btn btn-secondary" href="mailto:richard.earcare@gmail.com">Email us</a>
+            </div>
+          </div>
+          <div class="hours-card">
+            <h3>Hours</h3>
+            <p>Mon to Friday: 9 AM – 3 PM</p>
+            <p>Sat to Sun: Closed / Apt Only</p>
+            <p class="note">Appointments available by request.</p>
+            <a class="btn btn-primary btn-full" href="mailto:richard.earcare@gmail.com"
+              >Request an appointment</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Ear Care and Hearing of St. Louis, LLC</h3>
+          <p>11630 Studt Ave #210, St. Louis, MO 63141</p>
+          <p>(314) 532-0682</p>
+          <p>richard.earcare@gmail.com</p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <a href="#services">Services</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Book appointment</a>
+        </div>
+        <div>
+          <h4>Follow us</h4>
+          <p>Instagram · Facebook · Twitter · Pinterest</p>
+        </div>
+      </div>
+      <p class="footer-note">Made with care for better hearing outcomes.</p>
+    </footer>
+
+    <!-- AI ASSISTANT CHAT WIDGET -->
+    <div class="ai-assistant" id="aiAssistant">
+      <button class="ai-toggle" id="aiToggle" aria-label="Open AI Assistant">
+        <span class="ai-icon">💬</span>
+        <span class="ai-close">✕</span>
+      </button>
+      
+      <div class="ai-panel" id="aiPanel">
+        <div class="ai-header">
+          <div class="ai-avatar">🎧</div>
+          <div>
+            <h4>Hearing Care Assistant</h4>
+            <span class="ai-status">Ask me anything!</span>
+          </div>
+        </div>
+        
+        <div class="ai-messages" id="aiMessages">
+          <div class="ai-message ai-bot">
+            <p>Hi there! 👋 I'm your virtual assistant for Ear Care and Hearing of St. Louis. How can I help you today?</p>
+          </div>
+        </div>
+        
+        <div class="ai-suggestions" id="aiSuggestions">
+          <button class="ai-suggestion" data-question="What does your company do?">What do you do?</button>
+          <button class="ai-suggestion" data-question="What is pRAD therapy?">What is pRAD?</button>
+          <button class="ai-suggestion" data-question="What services do you offer?">Services</button>
+          <button class="ai-suggestion" data-question="Who is Richard Hogan?">Meet the team</button>
+          <button class="ai-suggestion" data-question="Where are you located?">Location</button>
+          <button class="ai-suggestion" data-question="What are your hours?">Hours</button>
+          <button class="ai-suggestion" data-question="How do I book an appointment?">Book appointment</button>
+        </div>
+        
+        <div class="ai-input-wrap">
+          <input type="text" id="aiInput" class="ai-input" placeholder="Type your question..." />
+          <button class="ai-send" id="aiSend">➤</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ========== INTERACTIVE HEARING EXPERIENCE ==========
+      const canvas = document.getElementById('waveform');
+      const ctx = canvas.getContext('2d');
+      const slider = document.getElementById('claritySlider');
+      const clarityPercent = document.getElementById('clarityPercent');
+      const waveOverlay = document.getElementById('waveOverlay');
+      const expCardBefore = document.getElementById('expCardBefore');
+      const expCardAfter = document.getElementById('expCardAfter');
+      
+      let clarity = 20;
+      let animationId;
+      let time = 0;
+
+      function resizeCanvas() {
+        const container = canvas.parentElement;
+        canvas.width = container.offsetWidth;
+        canvas.height = 200;
+      }
+
+      function lerp(a, b, t) {
+        return a + (b - a) * t;
+      }
+
+      function drawWave() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        const centerY = canvas.height / 2;
+        const clarityFactor = clarity / 100;
+        
+        // Background blur effect (less clarity = more "noise")
+        const noiseLevel = 1 - clarityFactor;
+        
+        // Draw multiple layered waves
+        for (let layer = 0; layer < 3; layer++) {
+          ctx.beginPath();
+          
+          const layerOffset = layer * 0.3;
+          const amplitude = lerp(15, 50, clarityFactor) * (1 - layer * 0.2);
+          const frequency = lerp(0.008, 0.015, clarityFactor);
+          const speed = 0.03 + layer * 0.01;
+          
+          // Add noise when clarity is low
+          const noiseAmplitude = noiseLevel * 20;
+          
+          for (let x = 0; x < canvas.width; x++) {
+            const noise = noiseAmplitude * Math.sin(x * 0.1 + time * 2) * Math.cos(x * 0.05);
+            const y = centerY + 
+              Math.sin(x * frequency + time * speed + layerOffset) * amplitude +
+              Math.sin(x * frequency * 2 + time * speed * 1.5) * (amplitude * 0.3) +
+              noise;
+            
+            if (x === 0) {
+              ctx.moveTo(x, y);
+            } else {
+              ctx.lineTo(x, y);
+            }
+          }
+          
+          // Gradient based on clarity
+          const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+          const alpha = lerp(0.2, 0.8, clarityFactor) - layer * 0.15;
+          const hue = lerp(0, 270, clarityFactor); // Red to purple
+          const saturation = lerp(30, 70, clarityFactor);
+          const lightness = lerp(50, 45, clarityFactor);
+          
+          gradient.addColorStop(0, `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})`);
+          gradient.addColorStop(0.5, `hsla(${hue + 20}, ${saturation + 10}%, ${lightness}%, ${alpha + 0.1})`);
+          gradient.addColorStop(1, `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})`);
+          
+          ctx.strokeStyle = gradient;
+          ctx.lineWidth = lerp(2, 4, clarityFactor) - layer * 0.5;
+          ctx.stroke();
+        }
+        
+        // Draw "clarity pulse" circles when high clarity
+        if (clarityFactor > 0.5) {
+          const pulseAlpha = (clarityFactor - 0.5) * 2 * 0.3;
+          const pulseSize = 20 + Math.sin(time * 2) * 10;
+          
+          for (let i = 0; i < 5; i++) {
+            const x = (canvas.width / 6) * (i + 1);
+            const y = centerY + Math.sin(x * 0.02 + time * 0.05) * 30;
+            
+            ctx.beginPath();
+            ctx.arc(x, y, pulseSize * (1 - i * 0.1), 0, Math.PI * 2);
+            ctx.fillStyle = `hsla(270, 70%, 50%, ${pulseAlpha * (1 - i * 0.15)})`;
+            ctx.fill();
+          }
+        }
+        
+        time += 0.05;
+        animationId = requestAnimationFrame(drawWave);
+      }
+
+      function updateClarity(value) {
+        clarity = parseInt(value);
+        clarityPercent.textContent = clarity;
+        
+        // Update overlay blur
+        const blurAmount = lerp(8, 0, clarity / 100);
+        waveOverlay.style.backdropFilter = `blur(${blurAmount}px)`;
+        waveOverlay.style.opacity = lerp(0.6, 0, clarity / 100);
+        
+        // Update cards
+        const beforeOpacity = lerp(1, 0.5, clarity / 100);
+        const afterOpacity = lerp(0.5, 1, clarity / 100);
+        const beforeScale = lerp(1, 0.95, clarity / 100);
+        const afterScale = lerp(0.95, 1, clarity / 100);
+        
+        expCardBefore.style.opacity = beforeOpacity;
+        expCardBefore.style.transform = `scale(${beforeScale})`;
+        expCardAfter.style.opacity = afterOpacity;
+        expCardAfter.style.transform = `scale(${afterScale})`;
+      }
+
+      slider.addEventListener('input', (e) => updateClarity(e.target.value));
+
+      // Initialize
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+      drawWave();
+      updateClarity(20);
+
+      // ========== FLOATING PARTICLES ==========
+      const particlesContainer = document.getElementById('particles');
+      
+      function createParticles() {
+        for (let i = 0; i < 20; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = Math.random() * 100 + '%';
+          particle.style.top = Math.random() * 100 + '%';
+          particle.style.animationDelay = Math.random() * 5 + 's';
+          particle.style.animationDuration = (5 + Math.random() * 10) + 's';
+          particle.style.width = particle.style.height = (4 + Math.random() * 8) + 'px';
+          particlesContainer.appendChild(particle);
+        }
+      }
+      
+      createParticles();
+
+      // ========== SMOOTH SCROLL REVEAL ==========
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.card, .callout, .badge, .hero-card, .hours-card, .exp-card').forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        observer.observe(el);
+      });
+
+      // ========== NAV LINK SMOOTH SCROLL ==========
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // ========== REVIEWS SYSTEM ==========
+      const reviewsGrid = document.getElementById('reviewsGrid');
+      
+      // ADD YOUR REVIEWS HERE - Each review should have: name, rating (1-5), text, and optionally a date
+      const reviews = [
+        // Example format (uncomment and modify when ready):
+        // { name: "John D.", rating: 5, text: "Amazing experience! Richard really took the time to understand my hearing needs.", date: "January 2026" },
+        // { name: "Mary S.", rating: 5, text: "The pRAD therapy changed my life. I can finally hear conversations clearly!", date: "December 2025" },
+      ];
+
+      function renderStars(rating) {
+        let stars = '';
+        for (let i = 1; i <= 5; i++) {
+          stars += `<span class="star ${i <= rating ? 'filled' : ''}">★</span>`;
+        }
+        return stars;
+      }
+
+      function getInitials(name) {
+        return name.split(' ').map(n => n[0]).join('').toUpperCase();
+      }
+
+      function renderReviews() {
+        if (reviews.length === 0) {
+          reviewsGrid.innerHTML = `
+            <div class="reviews-empty">
+              <div class="reviews-empty-icon">⭐</div>
+              <p>Reviews coming soon!</p>
+            </div>
+          `;
+          return;
+        }
+
+        reviewsGrid.innerHTML = reviews.map(review => `
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars">${renderStars(review.rating)}</div>
+            <p class="review-text">"${review.text}"</p>
+            <div class="review-author">
+              <div class="review-avatar">${getInitials(review.name)}</div>
+              <div class="review-info">
+                <h4>${review.name}</h4>
+                ${review.date ? `<span>${review.date}</span>` : ''}
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+        // Re-observe new elements for scroll animation
+        document.querySelectorAll('.review-card.reveal-on-scroll').forEach(el => {
+          observer.observe(el);
+        });
+      }
+
+      renderReviews();
+
+      // ========== AI ASSISTANT ==========
+      const aiAssistant = document.getElementById('aiAssistant');
+      const aiToggle = document.getElementById('aiToggle');
+      const aiPanel = document.getElementById('aiPanel');
+      const aiMessages = document.getElementById('aiMessages');
+      const aiInput = document.getElementById('aiInput');
+      const aiSend = document.getElementById('aiSend');
+      const aiSuggestions = document.getElementById('aiSuggestions');
+
+      // Knowledge base about the company
+      const knowledgeBase = {
+        "company": {
+          keywords: ["company", "do", "about", "who are you", "what is this", "business", "practice"],
+          answer: "Ear Care and Hearing of St. Louis is a fresh take on hearing healthcare! We're not your typical hearing aid clinic. While every clinic can sell the same devices, we focus on YOU as a person. We specialize in helping you hear better from the ear to the brain through our revolutionary pRAD Auditory Therapy program, combined with expertly fit hearing devices when needed."
+        },
+        "prad": {
+          keywords: ["prad", "therapy", "auditory therapy", "brain", "revolutionary"],
+          answer: "pRAD Auditory Therapy is our revolutionary program designed to change how your brain processes speech and language for the better! We're the Midwest's only provider of this therapy. It can be used standalone (if your hearing is normal) or paired with well-fit hearing devices (if you have hearing impairment). It's a total GAME CHANGER for hearing clarity!"
+        },
+        "services": {
+          keywords: ["services", "offer", "provide", "help with", "treatments"],
+          answer: "We offer comprehensive hearing care services including:\n\n• **Auditory Processing Testing & Treatment** - Comprehensive evaluation with targeted therapy\n• **Hearing Testing & Hearing Instruments** - Professional testing plus custom-fit devices\n• **Balance Testing & Fall Risk Assessment** - Expert balance evaluation\n• **pRAD Auditory Therapy** - Our revolutionary brain-based hearing program\n\nWe do things the hard way because that's how you'll hear your best!"
+        },
+        "team": {
+          keywords: ["team", "richard", "hogan", "audiologist", "doctor", "who works"],
+          answer: "Our team is led by **Richard M Hogan, MS** - an experienced Audiologist specializing in hearing aids and auditory processing care. Richard takes a personal, invested approach to your hearing health. He believes in doing things the hard way because that's how you'll achieve the best results!"
+        },
+        "location": {
+          keywords: ["location", "address", "where", "find you", "directions", "located"],
+          answer: "We're located at:\n\n📍 **11630 Studt Ave #210**\n**St. Louis, MO 63141**\n\nYou can reach us at **(314) 532-0682** or email **richard.earcare@gmail.com**. We'd love to see you!"
+        },
+        "hours": {
+          keywords: ["hours", "open", "when", "schedule", "time"],
+          answer: "Our office hours are:\n\n🕐 **Monday - Friday:** 9 AM – 3 PM\n🕐 **Saturday - Sunday:** Closed (Appointments available by request)\n\nNeed a time outside regular hours? Just ask - we're flexible!"
+        },
+        "appointment": {
+          keywords: ["appointment", "book", "schedule", "visit", "come in", "see you"],
+          answer: "We'd love to see you! You can book an appointment by:\n\n📞 **Call:** (314) 532-0682\n📧 **Email:** richard.earcare@gmail.com\n\nOr click the 'Book appointment' button anywhere on our website. We look forward to helping you hear your best!"
+        },
+        "hearing loss": {
+          keywords: ["hearing loss", "can't hear", "deaf", "hard of hearing", "hearing problem"],
+          answer: "If you're experiencing hearing difficulties, you're in the right place! We provide comprehensive hearing testing to understand your unique situation. Unlike other clinics, we focus on the whole picture - from your ear to your brain. Our pRAD therapy combined with properly fit hearing devices (if needed) can dramatically improve your hearing clarity and quality of life."
+        },
+        "cost": {
+          keywords: ["cost", "price", "expensive", "insurance", "pay", "afford"],
+          answer: "Every patient's needs are unique, so costs vary based on your specific treatment plan. We'd be happy to discuss pricing and payment options during your consultation. Give us a call at **(314) 532-0682** or email **richard.earcare@gmail.com** to learn more!"
+        },
+        "different": {
+          keywords: ["different", "unique", "special", "why you", "why choose"],
+          answer: "What makes us different? Every hearing aid clinic can sell you the exact same devices. But we're invested in YOU as a person! We focus on helping you hear better from the ear to the brain. Our revolutionary pRAD program, combined with expertly fit devices, gives you results that typical clinics simply can't match. We do things the hard way because that's how you'll hear your best!"
+        }
+      };
+
+      let isOpen = false;
+
+      function toggleChat() {
+        isOpen = !isOpen;
+        aiAssistant.classList.toggle('open', isOpen);
+        if (isOpen) {
+          aiInput.focus();
+        }
+      }
+
+      function addMessage(text, isUser = false) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `ai-message ${isUser ? 'ai-user' : 'ai-bot'}`;
+        
+        // Convert markdown-style formatting
+        let formattedText = text
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\*(.*?)\*/g, '<em>$1</em>')
+          .replace(/\n/g, '<br>');
+        
+        messageDiv.innerHTML = `<p>${formattedText}</p>`;
+        aiMessages.appendChild(messageDiv);
+        aiMessages.scrollTop = aiMessages.scrollHeight;
+      }
+
+      function showTyping() {
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'ai-message ai-bot ai-typing';
+        typingDiv.id = 'typingIndicator';
+        typingDiv.innerHTML = '<p><span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span></p>';
+        aiMessages.appendChild(typingDiv);
+        aiMessages.scrollTop = aiMessages.scrollHeight;
+      }
+
+      function removeTyping() {
+        const typing = document.getElementById('typingIndicator');
+        if (typing) typing.remove();
+      }
+
+      function findAnswer(question) {
+        const q = question.toLowerCase();
+        
+        for (const [topic, data] of Object.entries(knowledgeBase)) {
+          for (const keyword of data.keywords) {
+            if (q.includes(keyword)) {
+              return data.answer;
+            }
+          }
+        }
+        
+        // Default response
+        return "Great question! For the most accurate answer, I'd recommend reaching out to us directly at **(314) 532-0682** or **richard.earcare@gmail.com**. You can also click 'Book appointment' to schedule a consultation. Is there anything else I can help you with?";
+      }
+
+      function handleQuestion(question) {
+        if (!question.trim()) return;
+        
+        addMessage(question, true);
+        aiInput.value = '';
+        
+        showTyping();
+        
+        // Simulate AI thinking delay
+        setTimeout(() => {
+          removeTyping();
+          const answer = findAnswer(question);
+          addMessage(answer);
+        }, 800 + Math.random() * 700);
+      }
+
+      // Event listeners
+      aiToggle.addEventListener('click', toggleChat);
+      
+      aiSend.addEventListener('click', () => handleQuestion(aiInput.value));
+      
+      aiInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          handleQuestion(aiInput.value);
+        }
+      });
+
+      // Suggestion buttons
+      document.querySelectorAll('.ai-suggestion').forEach(btn => {
+        btn.addEventListener('click', () => {
+          handleQuestion(btn.dataset.question);
+        });
+      });
+
+      // Auto-open after delay (optional - creates engagement)
+      setTimeout(() => {
+        if (!isOpen) {
+          aiAssistant.classList.add('pulse');
+          setTimeout(() => aiAssistant.classList.remove('pulse'), 2000);
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>
